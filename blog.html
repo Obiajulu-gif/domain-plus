@@ -12,7 +12,7 @@
     />
  
     <link rel="stylesheet" href="./styles/blog.css">
-    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/home.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
       <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap"
@@ -20,70 +20,36 @@
       />
 
     <title>Blog</title>
-</head>
-<body>
+    <link rel="icon" href="./images/logo.png" type="image/png">
+    <link rel="stylesheet" href="./styles/base.css" />
+  </head>
+<body class="blog-page">
   
-    <header class="site-header" style="position: fixed;">
-      <div class="container header-container">
-        <div class="logo">
-          <img src="images/logo.png" alt="Domain Plus Logo" height="30" />
-          <span class="logo-text">Domain Plus</span>
-        </div>
+    <header class="site-header">
+  <div class="container header-container">
+    <a class="logo" href="./index.html" aria-label="Domain-Plus home">
+      <img src="./images/domain-plus log mod.png" alt="Domain Plus International Limited Logo" width="74" height="48" />
+      <span class="logo-text">Domain Plus<span class="logo-subtext">International Limited</span></span>
+    </a>
 
-        <nav class="main-nav">
-          <ul>
-            <li>
-              <a href="./index.html">Home</a>
-              <span class="dropdown-arrow"
-                ><i class="fa-solid fa-angle-down"></i
-              ></span>
-            </li>
-            <li>
-              <a href="./solution.html">Solutions</a>
-              <span class="dropdown-arrow"
-                ><i class="fa-solid fa-angle-down"></i
-              ></span>
-            </li>
-            <li>
-              <a href="./about.html">About Us</a>
-              <span class="dropdown-arrow"
-                ><i class="fa-solid fa-angle-down"></i
-              ></span>
-            </li>
-            <li>
-              <a href="./blog.html">Blog</a>
-              <span class="dropdown-arrow"
-                ><i class="fa-solid fa-angle-down"></i
-              ></span>
-            </li>
-            <li>
-              <a href="./contact.html">Contact</a>
-              <span class="dropdown-arrow"
-                ><i class="fa-solid fa-angle-down"></i
-              ></span>
-            </li>
-            <li class="d-lg-none mt-3">
-              <button class="btn btn-primary w-100">
-                Get Free Consultation
-              </button>
-            </li>
-          </ul>
-        </nav>
+    <nav class="main-nav" aria-label="Primary navigation">
+      <ul>
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./solution.html">Solutions</a></li>
+        <li><a href="./about.html">About Us</a></li>
+        <li><a href="./blog.html">Blog</a></li>
+        <li><a href="./contact.html">Contact</a></li>
+      </ul>
+    </nav>
 
-        <div class="header-actions d-flex align-items-center gap-3">
-          <button class="btn btn-primary cta-button d-none d-lg-inline-block">
-            Get Free Consultation
-          </button>
-
-          <button
-            class="mobile-menu-toggle d-lg-none"
-            style="background: none; border: none; cursor: pointer"
-          >
-            <i class="fa-solid fa-bars fs-2 text-white"></i>
-          </button>
-        </div>
-      </div>
-    </header>
+    <div class="header-actions">
+      <a href="https://calendly.com/software-development-domain-plusltd/30min" class="btn btn-primary nav-cta-desktop">Get Free Consultation</a>
+      <button class="mobile-menu-toggle" type="button" aria-label="Toggle navigation">
+        <span class="hamburger-bars" aria-hidden="true"></span>
+      </button>
+    </div>
+  </div>
+</header>
   
    <div class="hero">
      <div class="heroBG">
@@ -91,26 +57,18 @@
     </div>
 
     <div class="contents">
-        <p class="topside">
-            ERP IMPLEMENTATION <span> • </span>CUSTOMIZATION <span> • </span>AUTOMATION
-        </p>
+        <p class="topside"><i class="fa-solid fa-book-open"></i> ERP INSIGHTS <span>&bull;</span> IMPLEMENTATION <span>&bull;</span> AUTOMATION</p>
 
         <h2>
-            Scale Your Business with <br>
-            Smart <span>ERP-Powered</span> Operations
+            Practical ERP insights for <br>
+            smarter <span>business operations</span>
         </h2>
         <p>
-            Streamline finance, inventory, procurement, HR, and customer operations through seamless ERP integration, customization, and automation.
+            Read guides, trends, and implementation advice that help teams simplify finance, inventory, reporting, and everyday operations.
         </p>
 
-        <div class="cta-btn">
-            <span>
-                Book a Free Consultation
-            </span>
-            <button>
-                <i class="bi bi-arrow-up-right"></i></i>
-            </button>
-        </div>
+        <a class="cta-btn" href="https://calendly.com/software-development-domain-plusltd/30min"><i class="fa-solid fa-calendar-check"></i><span>Book a Free Consultation</span><i class="bi bi-arrow-up-right"></i></a>
+
     </div>
 
 
@@ -121,7 +79,7 @@
                 <p>
                     ERP Integration
                     <span>
-                        Integrate all departments and processes into one unified ERP system.
+                        Connect departments and workflows in one reliable ERP system.
                     </span>
                 </p>
 
@@ -132,7 +90,7 @@
                     Process Automation
 
                     <span>
-                        Automate workflow, eliminate manual tasks and boost operational efficiency
+                        Reduce manual work and make daily operations easier to manage.
                     </span>
                 </p>
 
@@ -160,7 +118,7 @@
                             Automation
                         </li>
                         <li value="Integration">Integration</li>
-                        <li value="Industriy-insights">Industriy Insights</li>
+                        <li value="Industry-insights">Industry Insights</li>
                         <li value="Digital-Transformation">Digital Transformation</li>
                         <li value="Product-Updates">Product Updates</li>
                 </ul>
@@ -170,7 +128,7 @@
             <div class="leftSideBar">
                 <div class="featured">
             <div class="featured-tag">
-                Featured 
+                <i class="fa-solid fa-star"></i> Featured 
             </div>
             <img loading="lazy" src="./images/big-post.png" alt="">
             <div class="article-content">
@@ -194,7 +152,7 @@
                     
                     <a href="" class="read-article">
                         <button class="read-article">
-                            Read Rull Article
+                            Read Full Article <i class="fa-solid fa-arrow-right"></i>
                         </button>
                     </a>
                     </div>
@@ -209,11 +167,11 @@
                     </span>
                     
                     <h3 id="post-title">
-                        How Business Process Drives Efficiency and Reduces Cost
+                        How Business Process Automation Drives Efficiency and Reduces Cost
                     </h3>
                     <p id="post-sum">
-                        Learn how automating repetitive tasks and workflows can eliminate errors, save
-                        time and boost productivity
+                        Learn how automating repetitive tasks and workflows can reduce errors, save
+                        time and improve productivity.
                     </p>
                     
                     <div class="group-time">
@@ -227,7 +185,7 @@
                     </div>
                 <a >
                     <button onclick="redirectToBlog(0)">
-                        Read more
+                        Read more <i class="fa-solid fa-arrow-right"></i>
                     </button>
                 </a>
                 </div>
@@ -258,7 +216,7 @@
                     </div>
                 <a >
                     <button class="blogTrigger" onclick="redirectToBlog(1)">
-                        Read more
+                        Read more <i class="fa-solid fa-arrow-right"></i>
                     </button>
                 </a>
                 </div>
@@ -274,8 +232,8 @@
                         Seamless Systems, Stronger Business: The Power of ERP Integration
                     </h3>
                     <p id="post-sum">
-                        Integrate your ERP with other critical systemsto unlock real-time data, better
-                        collaboration and smarter decisions.
+                        Integrate your ERP with other critical systems to unlock real-time data, better
+                        collaboration, and smarter decisions.
                     </p>
                     
                     <div class="group-time">
@@ -289,7 +247,7 @@
                     </div>
                 <a >
                     <button class="blogTrigger" onclick="redirectToBlog(2)">
-                        Read more
+                        Read more <i class="fa-solid fa-arrow-right"></i>
                     </button>
                 </a>
                 </div>
@@ -320,7 +278,7 @@
                     </div>
                 <a >
                     <button class="blogTrigger" onclick="redirectToBlog(3)">
-                        Read more
+                        Read more <i class="fa-solid fa-arrow-right"></i>
                     </button>
                 </a>
                 </div>
@@ -350,7 +308,7 @@
                     </div>
                 <a >
                     <button class="blogTrigger" onclick="redirectToBlog(4)">
-                       Read more
+                       Read more <i class="fa-solid fa-arrow-right"></i>
                     </button>
                 </a>
                 </div>
@@ -489,7 +447,7 @@
                             <i class="fa-solid fa-arrow-right"></i>
                         </div>
 
-                        <button class="btn">View All Resources →</button>
+                        <button class="btn">View All Resources <i class="fa-solid fa-arrow-right"></i></button>
                     </section>
 
                     <!-- Webinars -->
@@ -538,7 +496,7 @@
                             <a href="#">Register</a>
                         </div>
 
-                        <button class="btn">View All Webinars →</button>
+                        <button class="btn">View All Webinars <i class="fa-solid fa-arrow-right"></i></button>
                     </section>
 
                     <!-- Success Stories -->
@@ -550,7 +508,7 @@
                             <div>
                                 <h4>Manufacturing Company</h4>
                                 <p>40% improvement in operational efficiency with ERP.</p>
-                                <a href="#">Read Case Study →</a>
+                                <a href="#">Read Case Study <i class="fa-solid fa-arrow-right"></i></a>
                             </div>
                         </div>
 
@@ -559,7 +517,7 @@
                             <div>
                                 <h4>Retail Business</h4>
                                 <p>35% increase in productivity after ERP integration.</p>
-                                <a href="#">Read Case Study →</a>
+                                <a href="#">Read Case Study <i class="fa-solid fa-arrow-right"></i></a>
                             </div>
                         </div>
 
@@ -568,7 +526,7 @@
                             <div>
                                 <h4>Logistics Provider</h4>
                                 <p>50% faster order processing with cloud ERP.</p>
-                                <a href="#">Read Case Study →</a>
+                                <a href="#">Read Case Study <i class="fa-solid fa-arrow-right"></i></a>
                             </div>
                         </div>
 
@@ -628,8 +586,8 @@
         <div class="footer-grid">
           <div class="footer-col brand-col">
             <div class="footer-logo">
-              <img src="images/logo.png" alt="Domain Plus Logo" height="30" />
-              <span class="logo-text">Domain-Plus Ltd</span>
+              <img src="images/domain-plus log mod.png" alt="Domain Plus Logo" height="30" />
+              <span class="logo-text">Domain Plus<span class="logo-subtext">International Limited</span></span>
             </div>
             <p>
               We deliver innovative ERP solutions that help businesses
@@ -650,7 +608,7 @@
               <li><a href="./index.html">Home</a></li>
               <li><a href="./about.html">About Us</a></li>
               <li><a href="./solution.html">Solutions</a></li>
-              <li><a href="#">Blog</a></li>
+              <li><a href="./blog.html">Blog</a></li>
               <li><a href="./contact.html">Contact Us</a></li>
             </ul>
           </div>
@@ -673,10 +631,10 @@
             <h4>Resources</h4>
             <ul>
               <li><a href="case-studies.html">Case Studies</a></li>
-              <li><a href="#">Blog</a></li>
-              <li><a href="#">Whitepapers</a></li>
-              <li><a href="#">Webinars</a></li>
-              <li><a href="#">FAQs</a></li>
+              <li><a href="./blog.html">Blog</a></li>
+              <li><a href="./blog.html">Insights</a></li>
+              <li><a href="./blog.html">Webinars</a></li>
+              <li><a href="./contact.html">FAQs</a></li>
             </ul>
           </div>
 
@@ -718,7 +676,7 @@
         </div>
       </div>
     </footer>
-<script defer src="./JavaScript/script.js"></script>
+<script defer src="./JavaScript/site.js"></script>
 <script>
     const redirectToBlog = (num)=>{
          localStorage.setItem("currentBlog", num)
