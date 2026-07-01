@@ -1733,23 +1733,23 @@ body * {
 }
 
 .testimonial-photo img {
-  width: 420%;
+  width: 100%;
   height: 100%;
   object-fit: cover;
-  max-width: none;
+  object-position: center;
   display: block;
 }
 
 .testimonial-photo-one img {
-  transform: translateX(-5%);
+  object-position: center;
 }
 
 .testimonial-photo-two img {
-  transform: translateX(-38.333%);
+  object-position: center;
 }
 
 .testimonial-photo-three img {
-  transform: translateX(-71.667%);
+  object-position: center;
 }
 
 .testimonial-content {
@@ -1992,7 +1992,7 @@ body * {
   }
 
   .testimonial-photo img {
-    width: 420%;
+    width: 100%;
   }
 }
 
@@ -2164,5 +2164,81 @@ body .hero {
   body .about-hero,
   body .hero {
     min-height: 100vh !important;
+  }
+}
+
+@media (max-width: 992px) {
+  body .site-header .nav-cta-desktop,
+  body .main-header .nav-cta-desktop,
+  body .sticky-header .nav-cta-desktop,
+  body .header-actions > .nav-cta-desktop,
+  body .nav-cta-desktop {
+    display: none !important;
+  }
+
+  body .mobile-menu-toggle {
+    display: inline-flex !important;
+  }
+
+  body .header-actions {
+    display: flex !important;
+    align-items: center;
+    justify-content: flex-end;
+    min-width: 44px;
+  }
+}
+
+@media (max-width: 640px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  body .hero-section,
+  body .page-hero,
+  body .case-hero,
+  body .about-hero,
+  body .hero {
+    min-height: 100svh !important;
+    min-height: 100dvh !important;
+  }
+
+  body .page-hero,
+  body .case-hero {
+    display: flex;
+    align-items: center;
+    padding: 112px 16px 72px !important;
+  }
+
+  body section.page-hero,
+  body main.page-hero,
+  body section.case-hero,
+  body main.case-hero {
+    min-height: 100svh !important;
+    min-height: 100dvh !important;
+  }
+
+  body .page-hero .container,
+  body .case-hero .container {
+    width: 100% !important;
+  }
+
+  .blog-page .other-posts,
+  .blog-page .blog-post,
+  .blog-page .featured,
+  .blog-page .card,
+  .blog-page .sidebar,
+  .blog-page .subscribe {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  .blog-page .blog-post {
+    grid-template-columns: 1fr !important;
+  }
+
+  .blog-page .blog-post > img {
+    width: 100% !important;
+    min-width: 0 !important;
+    height: 210px !important;
   }
 }
