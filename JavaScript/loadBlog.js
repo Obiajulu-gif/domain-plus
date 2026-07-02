@@ -16,15 +16,13 @@ let blogSolution = document.querySelector('.blog-solution');
 let blogList = document.querySelectorAll('.solutions');
 let blogImpact = document.querySelector('.blog-impact');
 let quote = document.querySelector('blockquote');
-let about = document.querySelector('h3');
 let hero = document.querySelector('.hero');
-let blogTrigger = document.querySelector('.blogTrigger');
 let cta = document.querySelector('#cta-title');
 let ctaDesc = document.querySelector('#cta-description');
 let ctaBtn = document.querySelector('#cta-button');
 let benefits = document.querySelectorAll('.benefits');
 
-const currentBlog = localStorage.getItem("currentBlog")
+const currentBlog = Number(localStorage.getItem("currentBlog") || 0)
 
 const blogPosts = [
    {
@@ -146,7 +144,7 @@ const blogPosts = [
       category: "Cloud Solutions",
       readTime: "7 Min Read"
     },
-    featuredImage: "./images/cloud-erp-featured.jpg",
+    featuredImage: "./images/cloud.png",
     sections: [
       {
         heading: "Introduction",
@@ -241,7 +239,7 @@ const blogPosts = [
       category: "ERP Integration",
       readTime: "8 Min Read"
     },
-    featuredImage: "./images/integration-featured.jpg",
+    featuredImage: "./images/integration.png",
     sections: [
       {
         heading: "Introduction",
@@ -332,7 +330,7 @@ const blogPosts = [
       category: "Business Intelligence",
       readTime: "9 Min Read"
     },
-    featuredImage: "./images/analytics-featured.jpg",
+    featuredImage: "./images/data.png",
     sections: [
       {
         heading: "Introduction",
@@ -423,7 +421,7 @@ const blogPosts = [
       category: "ERP Strategy",
       readTime: "10 Min Read"
     },
-    featuredImage: "./images/implementation-featured.jpg",
+    featuredImage: "./images/strategy.png",
     sections: [
       {
         heading: "Introduction",
@@ -508,16 +506,7 @@ const blogPosts = [
   }
 ];
 
-// blogTrigger.addEventListener("click", function(e){
-//   console.log(e.target.tagName)
-// })
-
-// const blogId=(blogIndex)=>{
-//         return blogIndex;
-// };
-
-index = currentBlog;
-console.log(blogPosts[currentBlog]);
+const index = Number.isInteger(currentBlog) && blogPosts[currentBlog] ? currentBlog : 0;
 hero.style.background = blogPosts[index].hero;
 category.textContent = blogPosts[index].category;
 title[0].textContent = blogPosts[index].title;
@@ -540,11 +529,9 @@ answerTitle[2].textContent = blogPosts[index].sections[2].cards[2].title;
 answer[2].textContent = blogPosts[index].sections[2].cards[2].content;
 blogSolution.textContent = blogPosts[index].sections[3].heading;
 blogPosts[index].sections[3].list.forEach((item, i) =>{
-    // if(i > blogList.length){
-        // let blogList = document.createElement('li');
-        // blogList.key = i;
-        // }
-        blogList[i].textContent = item;
+  if (blogList[i]) {
+    blogList[i].textContent = item;
+  }
 })
 blogImpact.textContent = blogPosts[index].sections[4].heading;
 paragraphs[7].textContent = blogPosts[index].sections[4].paragraphs;

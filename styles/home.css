@@ -707,6 +707,30 @@ h1 {
   cursor: pointer;
 }
 
+.case-bg-manufacturing {
+  background-image: url("../images/manufacturing-industry-bg.png");
+}
+
+.case-bg-wholesale {
+  background-image: url("../images/global-distribution-bg.png");
+}
+
+.case-bg-retail {
+  background-image: url("../images/retail-bg.png");
+}
+
+.case-bg-construction {
+  background-image: url("../images/construction-bg.png");
+}
+
+.case-bg-healthcare {
+  background-image: url("../images/healthcare-bg.png");
+}
+
+.case-bg-finance {
+  background-image: url("../images/finance-bg.png");
+}
+
 .case-card:hover {
   transform: translateY(-6px);
   box-shadow: 0 24px 70px rgba(7, 11, 25, 0.22);
@@ -1171,6 +1195,11 @@ h1 {
   font-size: 3rem;
   max-width: 800px;
   line-height: 1.2;
+}
+
+.case-stat-divider {
+  border-color: rgba(0, 0, 0, 0.1);
+  margin: 24px 0;
 }
 
 .case-body {

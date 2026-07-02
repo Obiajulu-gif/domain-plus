@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"> 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
        <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
     />
- 
+
     <link rel="stylesheet" href="./styles/blog.css">
     <link rel="stylesheet" href="./styles/home.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
@@ -24,7 +24,7 @@
     <link rel="stylesheet" href="./styles/base.css" />
   </head>
 <body class="blog-page">
-  
+
     <header class="site-header">
   <div class="container header-container">
     <a class="logo" href="/" aria-label="Domain-Plus home">
@@ -50,7 +50,7 @@
     </div>
   </div>
 </header>
-  
+
    <div class="hero">
      <div class="heroBG">
         <img src="./images/arc.png" alt="">
@@ -84,7 +84,7 @@
                 </p>
 
             </div >
-            <div class="left-content div_2">     
+            <div class="left-content div_2">
                 <i class="bi bi-gear"></i>
                 <p>
                     Process Automation
@@ -108,7 +108,7 @@
                 <i class="bi bi-search"></i> <input type="text" id="search-input" placeholder="Search articles, topics or keywords...">
             </div>
             <div class="article-category">
-                <div class="drop" onclick="cateList.hidden^=1">
+                <div class="drop" data-category-toggle>
                     <label for="categories">Categories</label>
                 <i class="bi bi-arrow-down-short"></i>
                 </div>
@@ -128,7 +128,7 @@
             <div class="leftSideBar">
                 <div class="featured">
             <div class="featured-tag">
-                <i class="fa-solid fa-star"></i> Featured 
+                <i class="fa-solid fa-star"></i> Featured
             </div>
             <img loading="lazy" src="./images/big-post.png" alt="">
             <div class="article-content">
@@ -146,15 +146,13 @@
                         The Future of ERP: 8 Trends Shaping Intelligent Businesses
                     </h3>
                     <p id="article-sum">
-                        Discover how emerging technologies and modern ERP strategies are helping 
+                        Discover how emerging technologies and modern ERP strategies are helping
                         businesses drive agility, efficiency and growth.
                     </p>
-                    
-                    <a href="" class="read-article">
-                        <button class="read-article">
+
+                    <button class="read-article" type="button" data-blog-index="0">
                             Read Full Article <i class="fa-solid fa-arrow-right"></i>
                         </button>
-                    </a>
                     </div>
             </div>
                 </div>
@@ -165,7 +163,7 @@
                     <span id="post-category">
                             AUTOMATION
                     </span>
-                    
+
                     <h3 id="post-title">
                         How Business Process Automation Drives Efficiency and Reduces Cost
                     </h3>
@@ -173,7 +171,7 @@
                         Learn how automating repetitive tasks and workflows can reduce errors, save
                         time and improve productivity.
                     </p>
-                    
+
                     <div class="group-time">
 
                         <span id="posted-on">
@@ -183,11 +181,9 @@
                             6 min read
                         </span>
                     </div>
-                <a >
-                    <button onclick="redirectToBlog(0)">
+                <button data-blog-index="0">
                         Read more <i class="fa-solid fa-arrow-right"></i>
                     </button>
-                </a>
                 </div>
             </div>
             <div class="blog-post">
@@ -196,7 +192,7 @@
                     <span id="post-category">
                         CLOUD ERP
                     </span>
-                    
+
                     <h3 id="post-title">
                         5 Reasons Why More Businesses are Moving to Cloud ERP
                     </h3>
@@ -204,7 +200,7 @@
                         Explore the key benefits of cloud ERP and why it's the preferred
                         choice for modern businesses.
                     </p>
-                    
+
                     <div class="group-time">
 
                         <span id="posted-on">
@@ -214,11 +210,9 @@
                             7 min read
                         </span>
                     </div>
-                <a >
-                    <button class="blogTrigger" onclick="redirectToBlog(1)">
+                <button data-blog-index="1">
                         Read more <i class="fa-solid fa-arrow-right"></i>
                     </button>
-                </a>
                 </div>
             </div>
             <div class="blog-post">
@@ -227,7 +221,7 @@
                     <span id="post-category">
                         INTEGRATION
                     </span>
-                    
+
                     <h3 id="post-title">
                         Seamless Systems, Stronger Business: The Power of ERP Integration
                     </h3>
@@ -235,7 +229,7 @@
                         Integrate your ERP with other critical systems to unlock real-time data, better
                         collaboration, and smarter decisions.
                     </p>
-                    
+
                     <div class="group-time">
 
                         <span id="posted-on">
@@ -245,11 +239,9 @@
                             6 min read
                         </span>
                     </div>
-                <a >
-                    <button class="blogTrigger" onclick="redirectToBlog(2)">
+                <button data-blog-index="2">
                         Read more <i class="fa-solid fa-arrow-right"></i>
                     </button>
-                </a>
                 </div>
             </div>
             <div class="blog-post">
@@ -258,7 +250,7 @@
                     <span id="post-category">
                         DATA ANALYTICS
                     </span>
-                    
+
                     <h3 id="post-title">
                         From Data to Decisions: Leveraging Analytics in Your ERP
                     </h3>
@@ -266,7 +258,7 @@
                         Transform raw data into actionable insights and drive smarter business
                         outcomes with ERP analytics.
                     </p>
-                    
+
                     <div class="group-time">
 
                         <span id="posted-on">
@@ -276,11 +268,9 @@
                             6 min read
                         </span>
                     </div>
-                <a >
-                    <button class="blogTrigger" onclick="redirectToBlog(3)">
+                <button data-blog-index="3">
                         Read more <i class="fa-solid fa-arrow-right"></i>
                     </button>
-                </a>
                 </div>
             </div>
             <div class="blog-post">
@@ -296,7 +286,7 @@
                         Avoid common pitfalls and ensure your ERP project delivers maximum values
                         in these proven practices
                     </p>
-                    
+
                     <div class="group-time">
 
                         <span id="posted-on">
@@ -306,11 +296,9 @@
                             8 min read
                         </span>
                     </div>
-                <a >
-                    <button class="blogTrigger" onclick="redirectToBlog(4)">
+                <button data-blog-index="4">
                        Read more <i class="fa-solid fa-arrow-right"></i>
                     </button>
-                </a>
                 </div>
             </div>
         </div>
@@ -580,7 +568,7 @@
         </div>
     </div>
 
-    
+
      <footer class="site-footer">
       <div class="container">
         <div class="footer-grid">
@@ -677,14 +665,7 @@
       </div>
     </footer>
 <script defer src="./JavaScript/site.js"></script>
-<script>
-    const redirectToBlog = (num)=>{
-         localStorage.setItem("currentBlog", num)
-         setTimeout(()=>{
-            window.location.replace("/blogTest")
-         },10)
-    }
-</script>
+<script defer src="./JavaScript/blog.js"></script>
 </body>
 </html>
-    
+
