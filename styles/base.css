@@ -2655,7 +2655,7 @@ body * {
 }
 
 .about-page .story-section {
-  background: #eef6ff !important;
+  background: linear-gradient(180deg, #f8fbff 0%, #eef6ff 100%) !important;
   color: #0f172a;
 }
 
@@ -2683,7 +2683,41 @@ body * {
 .about-page .who-section p,
 .about-page .timeline-card p,
 .about-page .value-card p {
-  color: #475569 !important;
+  color: #334155 !important;
+}
+
+.about-page .story-section .badge-outline {
+  color: #0f172a !important;
+  border-color: rgba(37, 99, 235, 0.28) !important;
+  background: rgba(37, 99, 235, 0.08);
+}
+
+.about-page .story-intro p {
+  max-width: 700px;
+  color: #1e293b !important;
+  font-size: 1.08rem;
+  font-weight: 500;
+  line-height: 1.75;
+}
+
+.about-page .timeline-card {
+  border-color: rgba(37, 99, 235, 0.16) !important;
+}
+
+.about-page .timeline-card span {
+  color: #1d4ed8 !important;
+  border: 1px solid rgba(37, 99, 235, 0.18);
+  background: #dbeafe !important;
+}
+
+.about-page .timeline-card h3 {
+  font-weight: 800;
+}
+
+.about-page .timeline-card p {
+  color: #334155 !important;
+  font-size: 0.96rem;
+  line-height: 1.65;
 }
 
 .solution-page .section-title,

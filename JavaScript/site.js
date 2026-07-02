@@ -187,7 +187,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     const revealTargets = document.querySelectorAll(
-      ".service-card, .roadmap-card, .product-item, .product-card, .industry-item, .industry-card, .benefit-card, .process-step, .case-card, .impact-card, .value-card, .timeline-card, .cta-banner, .section-header",
+      ".service-card, .about-service-card, .roadmap-card, .product-item, .product-card, .industry-item, .industry-card, .benefit-card, .process-step, .case-card, .impact-card, .value-card, .timeline-card, .cta-banner, .section-header",
     );
 
     const observer = new IntersectionObserver(
